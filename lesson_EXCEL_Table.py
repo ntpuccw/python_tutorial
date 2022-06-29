@@ -1,7 +1,7 @@
 # read data from EXCEL file
 import pandas as pd
 file_dir = '../Data/'
-data = pd.read_excel(file_dir + 'Iris.xls')
+data = pd.read_excel(file_dir + 'Iris.xlsx', engine= 'openpyxl')
 # data = pd.read_excel('TaiwanBank.xlsx') # need pip install openpyxl
 data.head() #  list default 5 rows
 # data.info() # information for columns
