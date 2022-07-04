@@ -45,7 +45,7 @@ plt.axis([xlim[0], xlim[1],0,0.5])
 for i in df:
     y=t.pdf(x, i)
     plt.plot(x,y, lw=1, color='blue')
-    # plt.pause(0.5)
+    plt.pause(0.5)
 
 plt.title('T distribution')
 plt.legend()  
